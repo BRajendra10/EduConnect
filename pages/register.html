@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect - Registeration</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/register.css">
+    <!-- Remix icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div>
+            <h1 class="logo">EduConnect</h1>
+            <p class="slogan">Online learning platform</p>
+        </div>
+
+        <div class="actions">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#instructors">Mentors</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="menu-btn"><i class="ri-menu-line"></i></button>
+            <button class="register-btn"><a href="./pages/register.html">Register</a></button>
+        </div>
+    </div>
+
+
+    <main>
+        <form>
+            <h2>Create Your Account</h2>
+
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" placeholder="Enter your full name" required />
+            </div>
+
+            <div>
+                <label for="Email">Email</label>
+                <input type="Email" placeholder="Enter Your Email" required />
+            </div>
+
+            <div>
+                <label for="passowrd">Password</label>
+                <input type="password" placeholder="Min 8 Character password" required />
+            </div>
+
+            <div>
+                <label for="passowrd">Confirm Password</label>
+                <input type="password" placeholder="Re-Enter Password" required />
+            </div>
+
+            <div>
+                <label for="number">Phone Number</label>
+                <input type="tel" placeholder="Enter Your Phone No" required />
+            </div>
+
+            <div>
+                <label for="date of birth">Date of Birth</label>
+                <input type="date" placeholder="Min 8 Character password" required />
+            </div>
+
+            <div class="terms-and-conditions">
+                <input type="checkbox" required />
+                <span>I agrre to the <a href="#">terms and conditions</a> and acknowledge the <a href="#">student
+                        pirvacy policy</a></span>
+            </div>
+
+            <button type="submit">Create Account</button>
+
+            <span>Already have account? <a href="login.html">Login</a></span>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -7,6 +7,7 @@
     <title>EduConnect - Online learning platform</title>
     <!-- Link to your CSS file -->
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/course.css">
     <link rel="stylesheet" href="./styles/instructor.css">
     <link rel="stylesheet" href="./styles/testimonials.css">
     <link rel="stylesheet" href="./styles/footer.css">
@@ -25,16 +26,17 @@
                 <p class="slogan">Online learning platform</p>
             </div>
 
-            <div>
+            <div class="actions">
                 <nav>
                     <a href="index.html">Home</a>
                     <a href="courses.html">Courses</a>
-                    <a href="mentors.html">Mentors</a>
-                    <a href="blog.html">Testimonials</a>
+                    <a href="#instructors">Mentors</a>
+                    <a href="#testimonials">Testimonials</a>
                     <a href="contact.html">Contact</a>
                 </nav>
 
                 <button class="menu-btn"><i class="ri-menu-line"></i></button>
+                <button class="register-btn"><a href="./pages/register.html">Register</a></button>
             </div>
         </div>
         <div class="hero">
@@ -54,8 +56,9 @@
     <main>
         <section class="courses-section">
             <div class="section-header">
+                <span>CURATED CATELOG</span>
                 <h2 class="heading">Popular & Recomended</h2>
-                <p class="subheading">8 verified</p>
+                <p class="subheading">Showing 8 of 142 Active Courses <a href="#">View All courses</a></p>
             </div>
 
             <div class="section-content">
@@ -309,7 +312,7 @@
             </div>
         </section>
 
-        <section class="instructors-section">
+        <section class="instructors-section" id="instructors">
             <div class="section-header">
                 <span>ACDEMIC FACULTY</span>
                 <h2>Featured instructors</h2>
@@ -444,7 +447,7 @@
             </div>
         </section>
 
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <div class="section-header">
                 <span>VERIFIED OUTCOMES</span>
                 <h2>Learner Transformations</h2>

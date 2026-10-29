@@ -34,35 +34,43 @@ header {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
+
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #bfc9d1;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+  }
 }
 
-.navbar h1 {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.navbar p {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #bfc9d1;
-}
-
-nav {
+.actions nav {
   display: flex;
   gap: 1rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+  }
+
+  a:hover {
+    color: gray;
+  }
+  
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-  font-size: 0.9rem;
-}
-
-nav a:hover {
-  color: gray;
-}
-
-.navbar .menu-btn {
+.actions .menu-btn {
   border: none;
   outline: none;
   background-color: transparent;
@@ -70,6 +78,18 @@ nav a:hover {
   font-size: 1.3rem;
   display: none;
 }
+
+.actions .register-btn {
+  padding: 0.8em;
+  border: none;
+  border-radius: 0.5em;
+  background: blue;
+  
+  a {
+    color: white;
+  }
+}
+
 
 .hero {
   width: 100%;
@@ -83,7 +103,6 @@ nav a:hover {
 
 .hero-content {
   max-width: 30em;
-  /* min-width: fit-content; */
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -92,7 +111,7 @@ nav a:hover {
   color: white;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
 
@@ -132,147 +151,6 @@ nav a:hover {
   }
 }
 
-section.courses-section {
-  width: 100%;
-  height: fit-content;
-  margin: 3rem 0;
-  padding: 0 2rem;
-
-  .section-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1em;
-  }
-
-  .section-content {
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    gap: 1em;
-  }
-}
-
-.section-content .card {
-  height: 440px;
-  background: white;
-  border: 1px solid lightgray;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 1em;
-  position: relative;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-
-  .card-img {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    overflow: hidden;
-
-    .badge-container {
-      position: absolute;
-      top: 1%;
-      left: 1%;
-      display: flex;
-      gap: 0.5em;
-    }
-
-    .badge-container .badge {
-      padding: 0.3em 1em;
-      border-radius: 1em;
-      font-size: 0.7em;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    .badge-container .gray-badge {
-      background-color: lightgray;
-      color: black;
-    }
-
-    .badge-container .golden-badge {
-      background-color: goldenrod;
-      color: white;
-    }
-
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-top-left-radius: 1em;
-      border-top-right-radius: 1em;
-      object-fit: cover;
-    }
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    padding: 1em;
-
-    h3 {
-      font-size: 1.2em;
-      font-weight: bold;
-      /* margin-bottom: 0.5em; */
-    }
-
-    div {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 0.5em;
-    }
-
-    .card-ratings {
-      font-size: 0.8em;
-      justify-content: space-between;
-
-      i {
-        color: gold;
-      }
-    }
-
-    .card-instructor .instructor-profile {
-      width: 2.4em;
-      height: 2.4em;
-      border-radius: 100%;
-      background: lightblue;
-      font-size: 0.8em;
-      padding: 0.5em;
-    }
-
-    .card-featuers span {
-      font-size: 0.9em;
-
-      i {
-        font-size: 1em;
-      }
-    }
-
-    .card-footer {
-      justify-content: space-between;
-
-      .price {
-        font-size: 1.5em;
-        font-weight: bold;
-      }
-
-      .btn {
-        padding: 0.8em;
-        border: none;
-        border-radius: 0.8em;
-        background: blue;
-      }
-
-      .btn a {
-        color: white;
-      }
-    }
-  }
-}
-
 @media (max-width: 768px) {
   .navbar .menu-btn {
     display: block;
@@ -293,6 +171,6 @@ section.courses-section {
   }
 
   section {
-    padding: 0  0.5em; 
+    padding: 0 0.5em;
   }
 }
