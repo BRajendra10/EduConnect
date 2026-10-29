@@ -1,0 +1,146 @@
+footer {
+  width: 100%;
+  height: fit-content;
+  background: whitesmoke;
+  margin-top: 3rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-areas:
+    "newsletter newsletter links-1 links-2 links-3"
+    "copywrite copywrite copywrite copywrite copywrite";
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2em;
+}
+
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    span {
+      padding: 0.6em 0.7em;
+      border-radius: 0.5em;
+      background-color: black;
+      color: white;
+    }
+
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+
+  .newsletter-container h6 {
+    font-size: 1em;
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+  }
+
+  .newsletter-container p {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+
+  .newsletter-container .newsletter {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1em;
+
+    input {
+      height: 3em;
+      border: 1px solid lightgray;
+      border-radius: 0.5em;
+      padding: 0.5em;
+    }
+
+    button {
+      padding: 0.3em 1em;
+      border: none;
+      border-radius: 0.5em;
+      background-color: black;
+      color: white;
+      font-size: 1em;
+      font-weight: 500;
+    }
+  }
+}
+
+footer .links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  ul li {
+    list-style: none;
+
+    h6 {
+      font-size: 0.8em;
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      color: black;
+      font-size: 0.8em;
+      cursor: pointer;
+    }
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+    color: gray;
+  }
+}
+
+footer .copywrite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+
+  span {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    grid-template-areas:
+      "newsletter"
+      "links-1"
+      "links-2"
+      "links-3"
+      "copywrite";
+    grid-template-columns: 1fr;
+
+    .links {
+      align-items: flex-start;
+    }
+
+    .copywrite {
+        flex-direction: column;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+    grid-template-areas:
+      "newsletter newsletter newsletter"
+      "links-1 links-2 links-3"
+      "copywrite copywrite copywrite";
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .links {
+      align-items: flex-start;
+    }
+
+    .copywrite {
+        flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+section.instructors-section {
+  width: 100%;
+  height: fit-content;
+  margin: 3rem 0;
+  padding: 0 2rem;
+
+  .section-header {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 0.5em;
+    }
+
+    p {
+      font-size: 0.9em;
+      color: gray;
+    }
+
+    span {
+      font-size: 0.8em;
+      font-weight: 500;
+      color: blue;
+    }
+  }
+
+  .section-content {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5em;
+  }
+}
+
+.section-content .instructor-card {
+  height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 0.5em;
+  padding: 1em 2em;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-container .profile {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .profile-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .instructor-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+.instructor-info .info {
+  text-align: center;
+
+  h4 {
+    font-size: 1em;
+
+    i {
+      color: blue;
+      font-size: 1.3em;
+    }
+  }
+
+  span {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: blue;
+  }
+}
+
+.instructor-info p {
+  text-align: center;
+  font-size: 0.9em;
+  color: gray;
+}
+
+.instructor-info .featuers {
+  width: 100%;
+  padding: 0.5em 0;
+  background-color: lightgray;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div span {
+    font-size: 0.9em;
+  }
+
+  div span i {
+    font-size: 1.3em;
+    color: blue;
+  }
+}
