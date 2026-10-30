@@ -102,7 +102,7 @@ header {
 }
 
 .hero-content {
-  max-width: 30em;
+  max-width: 33em;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@ header {
     margin-top: 1rem;
 
     button {
-      padding: 0.6rem 1.2rem;
+      padding: 0.8rem 1.5rem;
       border: none;
       border-radius: 0.5em;
       outline: none;
@@ -137,17 +137,20 @@ header {
     }
 
     button.blue-btn {
-      background-color: #0d6efd;
+      background-color: blue;
+
+      a {
+        color: white
+      }
     }
 
     button.gray-btn {
-      background-color: #bfc9d1;
-      color: #fff;
+      background-color: lightgray;
+      a {
+        color: black;
+      }
     }
 
-    button.blue-btn a {
-      color: #fff;
-    }
   }
 }
 
