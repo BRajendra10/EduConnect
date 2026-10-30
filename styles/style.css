@@ -68,7 +68,6 @@ header {
   a:hover {
     color: gray;
   }
-  
 }
 
 .actions .menu-btn {
@@ -85,12 +84,11 @@ header {
   border: none;
   border-radius: 0.5em;
   background: blue;
-  
+
   a {
     color: white;
   }
 }
-
 
 .hero {
   width: 100%;
@@ -141,7 +139,7 @@ header {
       background-color: blue;
 
       a {
-        color: white
+        color: white;
       }
     }
 
@@ -151,11 +149,44 @@ header {
         color: black;
       }
     }
+  }
+}
 
+/* Styling for repeating sections */
+section {
+  width: 100%;
+  height: fit-content;
+  background: whitesmoke;
+  margin: 3rem 0;
+  padding: 2rem;
+
+  .section-header {
+    width: 100%;
+    margin-bottom: 1em;
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 0.5em;
+    }
+
+    p {
+      font-size: 0.8em;
+      color: gray;
+    }
+
+    span {
+      font-size: 0.8em;
+      font-weight: 500;
+      color: blue;
+    }
   }
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
   .navbar .menu-btn {
     display: block;
   }
@@ -175,6 +206,6 @@ header {
   }
 
   section {
-    padding: 0 0.5em;
+    padding: 1rem;
   }
 }

@@ -1,40 +1,9 @@
-/* Course styling */
-
-section.courses-section {
+.courses-section .section-content {
   width: 100%;
   height: fit-content;
-  background: whitesmoke;
-  margin: 3rem 0;
-  padding: 2rem;
-
-  .section-header {
-    width: 100%;
-    margin-bottom: 1em;
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 0.5em;
-    }
-
-    p {
-      font-size: 0.8em;
-      color: gray;
-    }
-
-    span {
-      font-size: 0.8em;
-      font-weight: 500;
-      color: blue;
-    }
-  }
-
-  .section-content {
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 1em;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1em;
 }
 
 .section-content .card {
@@ -155,12 +124,7 @@ section.courses-section {
 }
 
 @media (max-width: 768px) {
-  section.courses-section {
-    padding: 2rem 0.5rem;
-  }
-
-
   .section-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(280px, 1fr) !important;
   }
 }

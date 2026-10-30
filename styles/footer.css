@@ -106,7 +106,26 @@ footer .copywrite {
   }
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 768px) {
+    footer {
+    grid-template-areas:
+      "newsletter newsletter newsletter"
+      "links-1 links-2 links-3"
+      "copywrite copywrite copywrite";
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .links {
+      align-items: flex-start;
+    }
+
+    .copywrite {
+        flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 480px) {
   footer {
     grid-template-areas:
       "newsletter"
@@ -124,23 +143,12 @@ footer .copywrite {
         flex-direction: column;
     }
   }
-}
 
+  .newsletter-container .newsletter {
+    grid-template-rows: 1fr 1fr;
 
-@media (max-width: 768px) {
-    footer {
-    grid-template-areas:
-      "newsletter newsletter newsletter"
-      "links-1 links-2 links-3"
-      "copywrite copywrite copywrite";
-    grid-template-columns: 1fr 1fr 1fr;
-
-    .links {
-      align-items: flex-start;
-    }
-
-    .copywrite {
-        flex-direction: column;
+    input {
+      grid-column: 1 / 3;
     }
   }
 }

@@ -1,37 +1,10 @@
-section.instructors-section {
+
+.instructors-section .section-content {
   width: 100%;
   height: fit-content;
-  margin: 3rem 0;
-  padding: 0 2rem;
-
-  .section-header {
-    width: 100%;
-    margin-bottom: 2rem;
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 0.5em;
-    }
-
-    p {
-      font-size: 0.9em;
-      color: gray;
-    }
-
-    span {
-      font-size: 0.8em;
-      font-weight: 500;
-      color: blue;
-    }
-  }
-
-  .section-content {
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5em;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5em;
 }
 
 .section-content .instructor-card {
