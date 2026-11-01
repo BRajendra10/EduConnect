@@ -1,0 +1,238 @@
+header {
+  background: none;
+  height: fit-content;
+}
+
+main {
+  width: 100%;
+  height: fit-content;
+}
+
+.course-detail-section .section-header div {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 0.5em;
+
+  span {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font-size: 0.6em;
+    font-weight: bold;
+  }
+
+  span.gold {
+    background-color: goldenrod;
+    color: white;
+  }
+
+  span.blue {
+    background-color: lightskyblue;
+    color: black;
+  }
+
+  span.gray {
+    background-color: lightgray;
+    color: black;
+  }
+}
+
+.section-content {
+  display: grid;
+  grid-template-areas: "course-info price-info";
+  gap: 2rem;
+
+  .course-price-info {
+    background: white;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    .price-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-container h4 {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .price-container del {
+      font-size: 0.5em;
+      color: gray;
+    }
+
+    .price-container span {
+      font-size: 0.8em;
+      font-weight: 600;
+      color: blue;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+
+    .actions button {
+      padding: 0.8em;
+      border: none;
+      border-radius: 0.5em;
+      font-size: 1em;
+    }
+
+    .actions .blue-btn {
+      background-color: blue;
+      color: white;
+    }
+
+    .actions .gray-btn {
+      background-color: lightgrey;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+
+      li {
+        list-style: none;
+        font-size: 0.9em;
+      }
+
+      li i {
+        color: blue;
+        margin-right: 0.5em;
+        font-size: 1.2em;
+      }
+    }
+
+    span {
+      font-size: 0.8em;
+      color: blue;
+      text-align: center;
+    }
+  }
+
+  .course-info {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}
+
+.course-info .video-container {
+  width: 100%;
+  height: 40rem;
+  border-radius: 0.5em;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.course-info .course-main-info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    color: gray;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.3em;
+    gap: 1em;
+
+    .stars {
+      display: flex;
+      align-items: center;
+      gap: 0.2em;
+
+      span {
+        color: goldenrod;
+        font-size: 1em;
+      }
+    }
+
+    .students-record i {
+      color: blue;
+      font-size: 1.2em;
+    }
+  }
+
+  .instructor-info {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 0.5em;
+
+    .profile {
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      background-color: lightblue;
+    }
+
+    p {
+      font-size: 0.8em;
+      color: gray;
+
+      span {
+        font-weight: bold;
+        color: blue;
+      }
+    }
+
+    span {
+      font-size: 0.8em;
+      color: gray;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .section-content {
+    grid-template-areas: "course-info" "price-info";
+
+    .course-info .course-main-info {
+      width: 100%;
+    }
+
+    .course-price-info {
+        width: 400px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+    .course-info .video-container {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-info .video-container {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-content .course-price-info {
+        width: 100%;
+    }
+}
